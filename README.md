@@ -27,6 +27,13 @@ openupm add com.mygamedevtools.fps-counter
 4. Paste `com.mygamedevtools.fps-counter` into name.
 5. Click `Add`.
 
+**_NOTE:_** When using a Unity Version below `2023.2` you need to add a reference to TextMeshPro manually. This is because the package is now built-in in Unity, and will not work if a package needs it as a dependency. To do so, add the following line to the `dependencies` section of your `manifest.json` file:
+
+```json
+"com.unity.textmeshpro": "2.1.1",
+```
+
+
 Usage
 ---
 
